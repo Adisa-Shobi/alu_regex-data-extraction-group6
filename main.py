@@ -3,11 +3,11 @@ import re
 import sys
 
 restaurant_pattern='''@Oden'''
-ingredient_pattern='''@Glen'''
+ingredient_pattern='''([a-zA-Z0-9_.+-]+,\s)+([a-zA-Z0-9_.+-]+)'''  #Glen
 RGB_pattern='''rgb\(\d{1,3},\s*\d{1,3},\s*\d{1,3}\)'''
 social_pattern='''^@[\w\d_]+$'''
 product_pattern='''@Ade'''
-news_pattern='''@Glen'''
+news_pattern='''[a-zA-Z0-9_.+-]+:\s[a-zA-Z0-9_.+-]+'''  #Glen
 event_pattern=r'''\w{3}\s\d{2},\s\d{4}\s-\s\d{2}:\d{2}\s(AM|PM)'''
 email_pattern='''[a-zA-Z0-9_.+-]+@[a-zA-Z0-9-]+\.[a-zA-Z0-9-.]+'''
 
