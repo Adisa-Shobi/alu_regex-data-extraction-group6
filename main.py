@@ -2,7 +2,7 @@
 import re
 import sys
 
-restaurant_pattern='''@Oden'''
+restaurant_pattern=''''\w{2,25}\s\-\s\w{2,25}''' #Oden
 ingredient_pattern='''([a-zA-Z_.+-]+),'''  #Glen
 RGB_pattern='''rgb\(\d{1,3},\s*\d{1,3},\s*\d{1,3}\)'''
 social_pattern='''@[a-zA-Z0-9_]+'''
@@ -31,6 +31,7 @@ social = []
 ingredients = []
 news = []
 product = []
+restaurants = []
 for item in data:
     colors += re.findall(RGB_pattern, item)
     events += re.findall(event_pattern, item)
@@ -39,6 +40,7 @@ for item in data:
     ingredients += re.findall(ingredient_pattern, item)
     news += re.findall(news_pattern, item )
     product += re.findall (product_pattern, item)
+    restaurants += re.finall(restaurant_pattern, item)
 print(colors)
 print(events)
 print(emails)
@@ -46,3 +48,4 @@ print(social)
 print(ingredients)
 print(news)
 print(product)
+print(restaurants)
