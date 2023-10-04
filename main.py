@@ -40,7 +40,7 @@ for item in data:
     ingredients += re.findall(ingredient_pattern, item)
     news += re.findall(news_pattern, item )
     product += re.findall (product_pattern, item)
-    restaurants += re.finall(restaurant_pattern, item)
+    restaurants += re.findall(restaurant_pattern, item)
 print(colors)
 print(events)
 print(emails)
