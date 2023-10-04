@@ -1,0 +1,17 @@
+1. Breaking News: World Leaders Meet to Discuss Global Issues
+2. Sports: Football Championship Results
+3. Entertainment: New Movie Releases
+4. Technology: Apple Unveils Latest Gadgets
+5. Weather Update: Sunny Skies Expected This Weekend
+6. Finance: Stock Market Update
+7. Politics: Controversial Bill Passes in Parliament
+8. International: Earthquake Strikes Pacific Region
+9. Health: Tips for a Healthy Lifestyle
+10. Science & Technology: SpaceX Launches Mission to Mars
+11. Missing Subheader: Financial Analysts Predict Market Trends
+12. Extra Spaces: Business : Earnings Report Released 
+13. No Subheader: Lifestyle
+14. Irregular Capitalization: entertainment : New Celebrity Gossip
+15. Special Characters: Breaking News: COVID-19 Update!
+16. Empty Headline: : Subheader News
+17. Mixed Alphanumeric Characters: Tech: 12345: New Tech Gadgets
