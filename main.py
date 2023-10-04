@@ -2,7 +2,7 @@
 import re
 import sys
 
-restaurant_pattern=''''\w{2,25}\s\-\s\w{2,25}''' #Oden
+restaurant_pattern='''\w{2,25}\s\-\s\w{2,25}''' #Oden
 ingredient_pattern='''([a-zA-Z_.+-]+),'''  #Glen
 RGB_pattern='''rgb\(\d{1,3},\s*\d{1,3},\s*\d{1,3}\)'''
 social_pattern='''@[a-zA-Z0-9_]+'''
