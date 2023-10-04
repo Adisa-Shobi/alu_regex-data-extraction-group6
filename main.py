@@ -8,7 +8,7 @@ RGB_pattern='''rgb\(\d{1,3},\s*\d{1,3},\s*\d{1,3}\)'''
 social_pattern='''^@[\w\d_]+$'''
 product_pattern='''@Ade'''
 news_pattern='''[a-zA-Z]+\s[a-zA-Z]+:\s[a-zA-Z]+\s[a-zA-Z]+\s[a-zA-Z]+'''  #Glen
-event_pattern='''\w{3}\s\d{2},\s\d{4}\s-\s\d{2}:\d{2}\s(AM|PM)'''
+event_pattern='''\w{3}\s\d{2},\s\d{4}\s-\s\d{2}:\d{2}\s\w{2}'''
 email_pattern='''[a-zA-Z0-9_.+-]+@[a-zA-Z0-9-]+\.[a-zA-Z0-9-.]+'''
 
 def get_lines(file_name: str) -> [str]:
