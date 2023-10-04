@@ -5,7 +5,7 @@ import sys
 restaurant_pattern='''@Oden'''
 ingredient_pattern='''@Glen'''
 RGB_pattern='''rgb\(\d{1,3},\s*\d{1,3},\s*\d{1,3}\)'''
-social_pattern='''@meru'''
+social_pattern='''^@[\w\d_]+$'''
 product_pattern='''@Ade'''
 news_pattern='''@Glen'''
 event_pattern=r'''\w{3}\s\d{2},\s\d{4}\s-\s\d{2}:\d{2}\s(AM|PM)'''
@@ -25,10 +25,13 @@ data = get_lines(sys.argv[1])
 colors = []
 events = []
 emails = []
+social = []
 for item in data:
     colors += re.findall(RGB_pattern, item)
     events += re.findall(event_pattern, item)
     emails += re.findall(email_pattern, item)
+    social += re.findall(social_pattern, item)
 print(colors)
 print(events)
 print(emails)
+print(social)
